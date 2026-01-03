@@ -1,0 +1,16 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - "**/*.freezed.dart"
+    - "**/*.g.dart"
+    - "lib/injection.config.dart"
+  errors:
+    invalid_annotation_target: ignore
+
+linter:
+  rules:
+    - prefer_const_constructors
+    - prefer_const_literals_to_create_immutables
+    - prefer_final_fields
+    - use_key_in_widget_constructors

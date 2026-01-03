@@ -1,18 +1,84 @@
-# flutter_bloc_learn
+# Flutter Bloc Todo List
 
-A new Flutter application.
+A modernized Todo List application built with **Flutter 3**, **Bloc 9**, and **Clean Architecture**. This project demonstrates best practices for state management, dependency injection, and immutable data modeling using the latest Flutter ecosystem tools.
 
-## Getting Started
+## 🚀 Features
 
-This project is a starting point for a Flutter application.
+- **Modern Architecture**: Clean Architecture with separated layers (UI, Bloc, Repository, Database).
+- **State Management**: Uses `flutter_bloc` v9.0+ with the Event/State pattern.
+- **Dependency Injection**: Powered by `get_it` and `injectable`.
+- **Immutable Models**: Data classes generated using `freezed` and `json_serializable`.
+- **Local Database**: Persistent storage using `sqflite`.
+- **Material 3**: Fully styled with the latest Material Design 3 guidelines.
+- **Search**: Real-time filtering of todo items.
 
-A few resources to get you started if this is your first Flutter project:
+## 🛠 Tech Stack
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- **SDK**: Dart 3, Flutter 3.35+
+- **State Management**: [flutter_bloc](https://pub.dev/packages/flutter_bloc)
+- **DI**: [get_it](https://pub.dev/packages/get_it), [injectable](https://pub.dev/packages/injectable)
+- **Data Class**: [freezed](https://pub.dev/packages/freezed), [json_serializable](https://pub.dev/packages/json_serializable)
+- **Database**: [sqflite](https://pub.dev/packages/sqflite)
+- **Testing**: [bloc_test](https://pub.dev/packages/bloc_test), [mockito](https://pub.dev/packages/mockito)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📂 Project Structure
 
-## [Todo list example](https://medium.com/@vaygeth/reactive-flutter-todo-app-using-bloc-design-pattern-b71e2434f692)
+```
+lib/
+├── bloc/           # State management (Events & States)
+├── database/       # Database modules and DAO
+├── model/          # Immutable data models (Freezed)
+├── repository/     # Data repositories (Interfaces & Implementations)
+├── ui/             # UI Widgets and Pages
+│   └── widgets/    # Reusable UI components
+├── injection.dart  # DI setup
+└── main.dart       # App entry point
+```
+
+## ⚡ Getting Started
+
+### 1. Prerequisites
+
+Ensure you have Flutter installed and set up.
+
+```bash
+flutter doctor
+```
+
+### 2. Install Dependencies
+
+```bash
+flutter pub get
+```
+
+### 3. Code Generation
+
+This project uses `build_runner` to generate code for Freezed models, JSON serialization, and dependency injection.
+
+**One-time build:**
+```bash
+dart run build_runner build --delete-conflicting-outputs
+```
+
+**Watch mode (auto-rebuild on change):**
+```bash
+dart run build_runner watch --delete-conflicting-outputs
+```
+
+### 4. Run App
+
+```bash
+flutter run
+```
+
+## 🧪 Testing
+
+Run unit and widget tests:
+
+```bash
+flutter test
+```
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
