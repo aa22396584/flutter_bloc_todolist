@@ -1,7 +1,7 @@
 #!/bin/sh
 # This is a generated file; do not edit or check into version control.
-export "FLUTTER_ROOT=/Users/iml1s/fvm/versions/3.35.5"
-export "FLUTTER_APPLICATION_PATH=/Users/iml1s/Documents/mine/flutter_bloc_todolist"
+export "FLUTTER_ROOT=/Users/iml1s/flutter"
+export "FLUTTER_APPLICATION_PATH=/private/tmp/flutter_bloc_todolist"
 export "COCOAPODS_PARALLEL_CODE_SIGN=true"
 export "FLUTTER_TARGET=lib/main.dart"
 export "FLUTTER_BUILD_DIR=build"

@@ -27,7 +27,7 @@ void main() {
   group('TodoBloc', () {
     const todo1 = Todo(id: 1, description: 'Task 1');
     const todo2 = Todo(id: 2, description: 'Task 2');
-    final todos = [todo1, todo2];
+    const todos = [todo1, todo2];
 
     test('initial state is correct', () {
       expect(todoBloc.state, const TodoState.initial());
@@ -43,7 +43,7 @@ void main() {
       act: (bloc) => bloc.add(const TodoEvent.loadTodos()),
       expect: () => [
         const TodoState.loading(),
-        TodoState.loaded(todos),
+        const TodoState.loaded(todos),
       ],
       verify: (_) {
         verify(mockTodoRepository.getAllTodos(query: null)).called(1);
@@ -78,7 +78,7 @@ void main() {
       // So we expect loading -> loaded from the LoadTodos event triggered inside _onAddTodo
       expect: () => [
         const TodoState.loading(),
-        TodoState.loaded([todo1]),
+        const TodoState.loaded([todo1]),
       ],
       verify: (_) {
         verify(mockTodoRepository.insertTodo(todo1)).called(1);
