@@ -79,6 +79,12 @@ Run unit and widget tests:
 flutter test
 ```
 
+---
+
+## Support
+
+If this project saved you some time, you can [buy me a coffee](https://buymeacoffee.com/iml1s).
+
 ## 📝 License
 
 This project is open source and available under the [MIT License](LICENSE).
