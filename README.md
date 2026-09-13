@@ -1,8 +1,11 @@
 # Flutter Bloc Todo List
 
-> **Development home:** https://github.com/ImL1s/flutter_bloc_todolist  
-> Please open issues and pull requests there.  
-> **Mirrors:** [Codeberg](https://codeberg.org/ImL1s/flutter_bloc_todolist) · [GitLab](https://gitlab.com/aa22396584/flutter_bloc_todolist)
+**Development, Issues & Pull Requests:**  
+https://github.com/aa22396584/flutter_bloc_todolist
+
+**Mirrors:**  
+[GitLab](https://gitlab.com/aa22396584/flutter_bloc_todolist) ·
+[Codeberg](https://codeberg.org/ImL1s/flutter_bloc_todolist)
 
 
 A modernized Todo List application built with **Flutter 3**, **Bloc 9**, and **Clean Architecture**. This project demonstrates best practices for state management, dependency injection, and immutable data modeling using the latest Flutter ecosystem tools.
