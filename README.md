@@ -8,6 +8,8 @@ https://github.com/aa22396584/flutter_bloc_todolist
 [Codeberg](https://codeberg.org/ImL1s/flutter_bloc_todolist)
 
 
+> **Why this GitHub home?** Public development moved here from [`ImL1s/flutter_bloc_todolist`](https://github.com/ImL1s/flutter_bloc_todolist) because that GitHub account is currently restricted (anonymous visitors get 404 on the profile and many assets). This is the same project. Please open Issues and Pull Requests here.
+
 A modernized Todo List application built with **Flutter 3**, **Bloc 9**, and **Clean Architecture**. This project demonstrates best practices for state management, dependency injection, and immutable data modeling using the latest Flutter ecosystem tools.
 
 ## 🚀 Features
